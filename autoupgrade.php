@@ -111,7 +111,7 @@ class Autoupgrade extends Module
             $tab = new Tab((int) $id_tab);
             $tab->delete();
         }
-       if (!defined('_PS_ADMIN_DIR_')) {
+       if (defined('_PS_ADMIN_DIR_')) {
         // Remove the 1-click upgrade working directory
         self::_removeDirectory(_PS_ADMIN_DIR_ . DIRECTORY_SEPARATOR . 'autoupgrade');
 	   }
