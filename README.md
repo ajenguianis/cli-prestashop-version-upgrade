@@ -3,15 +3,21 @@ cli-prestashop-version-upgrade est un script qui permet une mise à jour de la v
 
 Before Running:
 
-  - Download and put ChainedTasks.php, autoupgrade.php and upgrade.sh in project folder
+  - git clone "https://github.com/ajenguianis/cli-prestashop-version-upgrade.git"
 
 Run:
 
 ~~~
-    bash upgrade.sh admin68314o6kw
+    bash cli-prestashop-version-upgrade\upgrade.sh admin266yf5dcp
     
-    admin68314o6kw is just a sample to be replaced with admin dir
+    admin266yf5dcp is just a sample to be replaced with admin dir
 ~~~
 
 
 **ENJOY**
+git clone \
+  --depth 1 \
+  --filter=blob:none \
+  --no-checkout \
+  https://github.com/cirosantilli/test-git-partial-clone \
+;
