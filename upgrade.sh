@@ -12,4 +12,6 @@ php modules/autoupgrade/cli-upgrade.php  --dir=$1 --channel=major --action=upgra
 php bin/console prestashop:module uninstall autoupgrade
 cd ./modules
 rm -rf autoupgrade
+cd ..
 rm -rf ChainedTasks.php
+rm -rf autoupgrade.php
