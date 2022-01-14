@@ -15,9 +15,3 @@ Run:
 
 
 **ENJOY**
-git clone \
-  --depth 1 \
-  --filter=blob:none \
-  --no-checkout \
-  https://github.com/cirosantilli/test-git-partial-clone \
-;
