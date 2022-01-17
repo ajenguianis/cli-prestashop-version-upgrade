@@ -1,5 +1,5 @@
 #!/bin/bash
-php ManageMaintenanceMode.php --token=b48a877f50d20963eaa2ccab09651c877f --action=enable
+php cli-prestashop-version-upgrade/ManageMaintenanceMode.php --token=b48a877f50d20963eaa2ccab09651c877f --action=enable
 git clone "https://github.com/PrestaShop/autoupgrade.git" ./modules/autoupgrade
 cd ./modules/autoupgrade
 composer install --ignore-platform-reqs --no-interaction
@@ -14,5 +14,5 @@ php bin/console prestashop:module uninstall autoupgrade
 cd ./modules
 rm -rf autoupgrade
 cd ..
-php ManageMaintenanceMode.php --token=b48a877f50d20963eaa2ccab09651c877f --action=disable
+php cli-prestashop-version-upgrade/ManageMaintenanceMode.php --token=b48a877f50d20963eaa2ccab09651c877f --action=disable
 rm -rf cli-prestashop-version-upgrade
