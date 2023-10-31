@@ -1,5 +1,5 @@
 # cli-prestashop-version-upgrade
-cli-prestashop-version-upgrade est un script qui permet une mise à jour de la version de prestashop en une seule step et via une commande bash
+cli-prestashop-version-upgrade is a script that allows you to update the Prestashop version in a single step and via a bash command
 
 Before Running:
 
