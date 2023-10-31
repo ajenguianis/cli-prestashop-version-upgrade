@@ -6,6 +6,7 @@ composer install --ignore-platform-reqs --no-interaction
 cd ../..
 cp ./cli-prestashop-version-upgrade/ChainedTasks.php ./modules/autoupgrade/classes/TaskRunner
 cp ./cli-prestashop-version-upgrade/autoupgrade.php ./modules/autoupgrade
+cp ./cli-prestashop-version-upgrade/Upgrader.php ./modules/autoupgrade/classes/
 php bin/console prestashop:module install autoupgrade
 php modules/autoupgrade/cli-upgrade.php  --dir=$1 --channel=major --action=upgradeNow
 php modules/autoupgrade/cli-upgrade.php  --dir=$1 --channel=major --action=upgradeDb
