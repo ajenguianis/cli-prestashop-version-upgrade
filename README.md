@@ -18,7 +18,7 @@ Copy information from the following file
 https://api.prestashop.com/xml/channel.xml
 
 In the classes/Upgrader.php file of the autoupgrade module
-replace lines 213 and 214 with
+Replace lines 213 and 214 with
 
 //line 213 $this->link = (string) $branch->download->link;
 Replace with
